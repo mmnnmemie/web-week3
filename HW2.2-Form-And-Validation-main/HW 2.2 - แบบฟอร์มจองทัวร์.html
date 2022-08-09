@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> แบบฟอร์มจองทัวร์ </title>
+
+</head>
+    
+<body>
+
+    <form action="form-echo.php" method="get">
+
+<fieldset>
+
+    <h1> แบบฟอร์มจองทัวร์ </h1>
+    
+    <fieldset>
+
+    <Legend> ข้อมูลทั่วไป </Legend>
+
+    ชื่อ-สกุล : <br>
+    <input type="text"
+    name="Name"
+    placeholder="กรอกชื่อ-สกุล" required > * <br>
+
+    Email : <br>
+    <input type="email" 
+    id="email"
+    name="Email" > * <br>
+
+    โทรศัพท์ : <br>
+    <input type="text"
+    name="Telephone"
+    value="+66 " > * <br>
+
+    ที่อยู่ : <br>
+    <textarea name="Address" id="address" cols="30" rows="5"> </textarea> <br>
+
+    รหัสไปรษณีย์ :
+    <input type="text"
+    name="Postcode" style="width: 80px;"
+    pattern="[0-9]{5}" > <br>
+
+    รูปผู้จอง :
+    <input type="file"
+    name="File" > <br>
+
+    </fieldset>
+
+    <fieldset>
+
+    <Legend> ข้อมูลเข้าสู่ระบบ  </Legend> 
+
+    Username : <br>
+    <input type="text"
+    name="Username"
+    minlength="8"
+    pattern="[A-Za-z0-9 | (_)]+" > <br>
+    <I> ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป </I> <br><br>
+
+    Password : <br>
+    <input type="password"
+    name="Password"
+    minlength="8" > <br>
+    <I> ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป </I>
+
+    </fieldset>
+
+    <fieldset>
+    
+    <legend> ข้อมูลทัวร์ที่ต้องการ </legend>
+
+    แพคเก็จทัวร์ :
+    <select name="Country">
+        <option value=""> --- Select --- </option>
+        <option value="Korea"> Korea </option>
+        <option value="Japan"> Japan </option>
+        <option value="Singapore"> Singapore </option>
+        <option value="Switzerland"> Switzerland </option>
+        <option value="United States of America"> United States of America </option>
+    </select> <br>
+
+    วันที่เดินทาง :
+    <input type="date" name="Date"> <br>
+
+    จำนวนผู้เดินทาง :
+    <input type="number" name="Member" min="1" max="10"> <br>
+
+    เน้นการท่องเที่ยวแบบใด ? <br>
+
+    <!-- ช็อปปิ้ง -->
+    <input type="checkbox" id="ช็อปปิ้ง" name="LifeStyle" value="ช็อปปิ้ง">
+    <label for="ช็อปปิ้ง"> ช็อปปิ้ง </label> <br>
+
+    <!-- ธรรมชาติ -->
+    <input type="checkbox" id="ธรรมชาติ" name="LifeStyle" value="ธรรมชาติ">
+    <label for="ธรรมชาติ"> ธรรมชาติ </label> <br>
+
+    <!-- ทะเล -->
+    <input type="checkbox" id="ทะเล" name="LifeStyle" value="ทะเล">
+    <label for="ทะเล"> ทะเล </label> <br>
+
+    </fieldset>
+
+    ยอมรับเงื่อนไขและข้อตกลง
+
+    <!-- I Agree -->
+    <input type="radio" id="I Agree" name="Agreement" value="I Agree" checked>
+    <label for="I Agree"> I agree </label>
+
+    <!-- I Disagree -->
+    <input type="radio" id="I Disagree" name="Agreement" value="I Disagree">
+    <label for="I Disagree"> I disagree </label>  &nbsp;
+
+    <input type="Submit" value="จอง">
+
+</fieldset>
+
+    </form>
+
+</body>
+
+</html>

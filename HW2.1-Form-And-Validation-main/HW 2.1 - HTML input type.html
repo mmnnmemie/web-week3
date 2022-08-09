@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML input type </title>
+
+</head>
+
+<body>
+
+    <form action="form-echo.php" method="get">
+
+    1.ชื่อเต็ม/ย่อของสาขาวิชา :
+    <input type="text"> <br><br>
+
+    2.จำนวนเงินที่จะโอน :
+    <input type="text"> <br><br>
+    
+    <fieldset>
+
+    <legend> 3.อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย </legend>
+        
+    1.) <input type="text"> <br>
+    2.) <input type="text"> <br>
+    3.) <input type="text"> <br>
+    4.) <input type="text"> <br>
+    5.) <input type="text"> <br>
+
+    </fieldset> <br>
+    
+    4.ค่าไฟฟ้า 3 เดือนที่ผ่านมา : 
+    <input type="text"> ฿ <br><br>
+
+    5.รหัสบัตรประชาชน :
+    <input type="text" name="IDCard" maxlength="13" pattern="[0-9]"> <br><br>
+
+    <fieldset>
+
+    <legend> 6. ความพึงพอใจของหนังสือเล่มนี้ </legend>
+                
+    <input type="radio" name="Very-Satisfield" > Very : พอใจมาก <br>
+    <input type="radio" name="Moderate-Satisfield" > Moderate : พอใจปานกลาง <br>
+    <input type="radio" name="Less-Satisfield" > Less : พอใจน้อย <br>
+        
+    </fieldset> <br>
+
+    7.อาการป่วย : <br>
+    <textarea name="Sick" cols="30" rows="10"> </textarea> <br><br>
+
+    8.ในช่วง 3 เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่ <br>
+
+    <input type="radio" name="vac" value="YES" > YES
+    <input type="radio" name="vac" value="NO" > NO <br><br>
+
+    9.รหัสผ่าน : 
+    <input type="password" name="Password" > <br><br>
+
+    10.เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน :
+    เข้าเรียน : <input type="time" name="เข้าเรียน" > &nbsp;
+    สิ้นสุดการเรียน : <input type="time" name="สิ้นสุดการเรียน" > <br><br>
+    
+    11.วันเวลาที่ต้องไปพบแพทย์ : 
+    <input type="date" name=" Date" > <br><br>
+
+    <input type="Submit" value="SUBMIT">
+
+    </form>
+
+</body>
+
+</html>
